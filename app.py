@@ -13,7 +13,7 @@ from transformers import pipeline
 nltk.download('vader_lexicon')
 
 # ====== API KEY ======
-API_KEY = "AIzaSyCBolLBvTHOdpPyyctfopbLMon9LJr-LhA"
+API_KEY = st.secrets["YOUTUBE_API_KEY"]
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 # ====== SENTIMENT MODELS ======
